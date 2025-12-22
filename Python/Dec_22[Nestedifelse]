@@ -1,0 +1,850 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM02w4T5UA2451kz849b7t4",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/ChiranthKumarSwamy/python-practice/blob/main/Python/Dec_22%5BNestedifelse%5D\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Conditional if-else"
+      ],
+      "metadata": {
+        "id": "UM4ZziJbCB8m"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oaFKmSZf8P16",
+        "outputId": "554e7fc6-6bd5-490d-efaa-162d7b9800e1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the value for n1\n",
+            "odd\n"
+          ]
+        }
+      ],
+      "source": [
+        "n = int(input(\"Enter the value for n\"))\n",
+        "if (n%2==0):\n",
+        "  print(\"Even\")\n",
+        "else :\n",
+        "  print(\"odd\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Conditional if-elseif-else\n"
+      ],
+      "metadata": {
+        "id": "tb0H9GcBCFZI"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Greater of 2 number"
+      ],
+      "metadata": {
+        "id": "qxzotQzWCpKi"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter the value for a\"))\n",
+        "b = int(input(\"Enter the value for b\"))\n",
+        "if(a>b):\n",
+        "  print(\"A is greater\")\n",
+        "elif (a==b):\n",
+        "  print(\"Both are equal\")\n",
+        "else :\n",
+        "  print(\"B is greater\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CeoJ8AfPCJPB",
+        "outputId": "c607fda9-eccb-4d97-fde2-dbd79f662d04"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the value for a2\n",
+            "Enter the value for b1\n",
+            "A is greater\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Which number is greater"
+      ],
+      "metadata": {
+        "id": "IWwdxZ6MDcwP"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter the value for a \"))\n",
+        "b = int(input(\"Enter the value for b \"))\n",
+        "c = int(input(\"Enter the value for c \"))\n",
+        "if (a>b and a>c):\n",
+        "  print(\"A is greater\")\n",
+        "elif (b>a and b>c ):\n",
+        "  print(\"B is greater \")\n",
+        "elif (c>a and c>b):\n",
+        "  print(\"c is greater\")\n",
+        "elif (a==b):\n",
+        "  print(\" A and B numbers are equal\")\n",
+        "elif (b==c):\n",
+        "  print(\" B and C numbers are equal\")\n",
+        "else :\n",
+        "  print(\" C and A numbers are equal\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WuRbL844DdOb",
+        "outputId": "67fab834-071d-497e-bb15-a8c6b46d4228"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the value for a 2\n",
+            "Enter the value for b 1\n",
+            "Enter the value for c 2\n",
+            " C and A numbers are equal\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Nested if-else"
+      ],
+      "metadata": {
+        "id": "VtFtSbO7L5PV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter the value for a \"))\n",
+        "b = int(input(\"Enter the value for b \"))\n",
+        "c = int(input(\"Enter the value for c \"))\n",
+        "\n",
+        "if a==b and b==c :\n",
+        "  print(\"All are Equal\")\n",
+        "elif (a>b):\n",
+        "  if (a>c):\n",
+        "    print(\"a is greater\")\n",
+        "else :\n",
+        "  if(b>a):\n",
+        "    print(\"B is greater\")\n",
+        "  else:\n",
+        "    print(\"C is greater\")"
+      ],
+      "metadata": {
+        "id": "7C-Mmj1mJIhl"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "greater of 3"
+      ],
+      "metadata": {
+        "id": "sF1mBhq7L1nF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "gGRcvhnjKmFi"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter the value for a \"))\n",
+        "if(a%3==0):\n",
+        "  if(a%5==0):\n",
+        "    print(\"Divisible by both\")\n",
+        "  else:\n",
+        "    print(\"Divisible by 3\")\n",
+        "else :\n",
+        "  if(a%5==0):\n",
+        "    print(\"Only divisible by 5\")\n",
+        "  else:\n",
+        "    print(\"not divisible  by both\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Sn5MXclCKmuM",
+        "outputId": "8970922c-5767-460c-cc5c-c6969cbbabf3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the value for a 88\n",
+            "not divisible  by both\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = int(input(\"enter the age \"))\n",
+        "if (age<16):\n",
+        "  print(\"Not eligible for licence\")\n",
+        "elif(age>=16 and age <18):\n",
+        "  print(\"Learning licence can be given \")\n",
+        "else:\n",
+        "  print(\"Dl can be given \")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1MbcZ9vgMZz0",
+        "outputId": "89f4c0ae-73be-4d89-ac2c-d798d3e35090"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the age 1\n",
+            "Not eligible for licence\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "age = int(input(\"enter the age \"))\n",
+        "if (age <16):\n",
+        "  print(\"not eligible \")\n",
+        "else :\n",
+        "  if(age<18):\n",
+        "    print(\"Learning licence\")\n",
+        "  else:\n",
+        "    print(\"DL\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CDH64HfSNnLd",
+        "outputId": "ad5f4ca9-35c2-4332-e3c1-923cd2b1bf85"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the age 18\n",
+            "DL\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3 value input from user"
+      ],
+      "metadata": {
+        "id": "uAueGqPMPdSa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter the value for a \"))\n",
+        "b = int(input(\"Enter the value for b \"))\n",
+        "c = int(input(\"Enter the value for c from 1 - 6 2\"))\n",
+        "if(c==1):\n",
+        "  d=a+b\n",
+        "  print(f\"The choice is {c} and the output is a{a} + b{b} = {d} \")\n",
+        "elif(c==2):\n",
+        "  d=a-b\n",
+        "  print(f\"The choice is {c} and the output is a{a} - b{b} = {d} \")\n",
+        "elif(c==3):\n",
+        "  d=a*b\n",
+        "  print(f\"The choice is {c} and the output is a{a} * b{b} = {d} \")\n",
+        "elif(c==4):\n",
+        "  if(a==0 or b ==0):\n",
+        "    print(\"This gives error dont try dividing by 0 \")\n",
+        "  else:\n",
+        "    d=a/b\n",
+        "    print(f\"The choice is {c} and the output is a{a} / b{b} = {d} \")\n",
+        "elif(c==5):\n",
+        "  d=a%b\n",
+        "  print(f\"The choice is {c} and the output is a{a} % b{b} = {d} \")\n",
+        "elif(c==6):\n",
+        "  d=a**b\n",
+        "  print(f\"The choice is {c} and the output is a{a} ** b{b} = {d} \")\n",
+        "else :\n",
+        "  print(\"Print incorrect value \")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xDbnsrdvPXQP",
+        "outputId": "afe04929-1ac8-45b5-953c-1f969223c983"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the value for a 1\n",
+            "Enter the value for b 2\n",
+            "Enter the value for c from 1 - 6 7\n",
+            "Print incorrect value \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Match case [Similar to switch case in c program]"
+      ],
+      "metadata": {
+        "id": "a82K4XoeTrEw"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter the value for a \"))\n",
+        "b = int(input(\"Enter the value for b \"))\n",
+        "c = int(input(\"Enter the value for c from 1 - 6 2\"))\n",
+        "match c :\n",
+        "  case 1:\n",
+        "    d=a+b\n",
+        "    print(f\"The choice is {c} and the output is a{a} + b{b} = {d} \")\n",
+        "  case 2:\n",
+        "    d=a-b\n",
+        "    print(f\"The choice is {c} and the output is a{a} - b{b} = {d} \")\n",
+        "  case 3:\n",
+        "    d=a*b\n",
+        "    print(f\"The choice is {c} and the output is a{a} * b{b} = {d} \")\n",
+        "  case 4:\n",
+        "     if(a==0 or b ==0):\n",
+        "       print(\"This gives error dont try dividing by 0 \")\n",
+        "     else:\n",
+        "      d=a/b\n",
+        "      print(f\"The choice is {c} and the output is a{a} / b{b} = {d} \")\n",
+        "  case 5:\n",
+        "    d=a%b\n",
+        "    print(f\"The choice is {c} and the output is a{a} % b{b} = {d} \")\n",
+        "\n",
+        "  case 6:\n",
+        "    d=a**b\n",
+        "    print(f\"The choice is {c} and the output is a{a} ** b{b} = {d} \")\n",
+        "\n",
+        "  case _:\n",
+        "    print(\"Print incorrect value \")\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "27uV9AwSTkmq"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "If login is not successful, display “Login failed”\n",
+        "\n",
+        "Else if webcam is not detected, display “Webcam required”\n",
+        "\n",
+        "Else if internet connection is not stable, display “Internet issue”\n",
+        "\n",
+        "Else, start the exam"
+      ],
+      "metadata": {
+        "id": "zv3czrWk1-VW"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# user_name = input(\"Enter your username\")\n",
+        "# user_password = input(\"Enter your password \")\n",
+        "# name = 'chiru'\n",
+        "# password = 'ck'\n",
+        "# if(user_name !=name):\n",
+        "#   print(\"Username incorrect\")\n",
+        "# elif(user_name==name and user_password !=password):\n",
+        "#   print(\"Password Incoorect\")\n",
+        "# else:\n",
+        "#   print(\"Successfull login\")\n",
+        "\n",
+        "login = input(\" Successfull or not successfull\")\n",
+        "webcam = input(\"webcam detected or webcam not detected\")\n",
+        "internet = input(\"internet stable or unstable\")\n",
+        "if (login !='succesfull'):\n",
+        "  print(\"Login failed\")\n",
+        "elif (webcam !='webcam detected'):\n",
+        "  print(\"Webcam required\")\n",
+        "elif(internet !='stable'):\n",
+        "  print(\"Internet issue\")\n",
+        "else:\n",
+        "  print(\"start exam\")"
+      ],
+      "metadata": {
+        "id": "S2bq0v_sUKOM",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "2ab87a6c-8e16-4dc7-8530-c0c19af82ff9"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " Successfull or not successfullsuccesfull\n",
+            "webcam detected or webcam not detectedwebcam detected\n",
+            "internet stable or unstablestable\n",
+            "start exam\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "login = input(\" Successfull or not successfull \")\n",
+        "webcam = input(\"webcam detected or webcam not detected \")\n",
+        "internet = input(\"internet stable or unstable \")\n",
+        "\n",
+        "if(login=='Successfull'):\n",
+        "  if(webcam !='detected'):\n",
+        "    print(\"Webcam required\")\n",
+        "  else :\n",
+        "    if(internet !='stable'):\n",
+        "      print(\"Internet unsatble\")\n",
+        "    else:\n",
+        "      print(\"Start exam \")\n",
+        "else:\n",
+        "  print(\"Login failed\")\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qiut4_Kc6d9A",
+        "outputId": "93fbed9f-22f8-41a3-ad74-d87c5afa9ddb"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " Successfull or not successfull Successfull\n",
+            "webcam detected or webcam not detected stable\n",
+            "internet stable or unstable unstable\n",
+            "Webcam required\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Take username and password\n",
+        "\n",
+        "If username is correct\n",
+        "\n",
+        "If password is correct → Login success\n",
+        "\n",
+        "Else → Wrong password\n",
+        "\n",
+        "Else → Invalid username"
+      ],
+      "metadata": {
+        "id": "s5bjM9IP9Czf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "user_name = input(\"enter the username\")\n",
+        "user_password = input(\"enter the password\")\n",
+        "name = 'chiru'\n",
+        "password = '123'\n",
+        "if(user_name==name):\n",
+        "  if(user_password!=password):\n",
+        "    print(\"Password Incorrect\")\n",
+        "  else:\n",
+        "    print(\"Login Succesfull\")\n",
+        "else:\n",
+        "  print(\"Invalid user\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9okDD71a9D2x",
+        "outputId": "d1b2acd7-1f6e-42c0-d34b-7d19622b8918"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the usernamechiru\n",
+            "enter the password123\n",
+            "Login Succesfull\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "If first is greatest\n",
+        "\n",
+        "Check if it is even or odd\n",
+        "\n",
+        "Else if second is greatest\n",
+        "\n",
+        "Check if positive or not\n",
+        "\n",
+        "Else third is greatest"
+      ],
+      "metadata": {
+        "id": "TqR1JIog-ZBL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter the value for a \"))\n",
+        "b = int(input(\"Enter the value for b \"))\n",
+        "c = int(input(\"Enter the value for c \"))\n",
+        "\n",
+        "if(a<b and a<c):\n",
+        "  if(b>c and b>a):\n",
+        "    if(b>0):\n",
+        "      print(\"positive\")\n",
+        "    else:\n",
+        "      print(\"Negative\")\n",
+        "  else:\n",
+        "    if(c>a and c>b):\n",
+        "     print(\"C is greater\")\n",
+        "else :\n",
+        " if(a%2==0):\n",
+        "  print(\"a is even\")\n",
+        " else:\n",
+        "  print(\"a is odd\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RO0p0DeW-Zs5",
+        "outputId": "98fd22dd-832d-44a6-f92d-1015bada60e4"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the value for a 0\n",
+            "Enter the value for b 2\n",
+            "Enter the value for c 1\n",
+            "positive\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter the value for a \"))\n",
+        "b = int(input(\"Enter the value for b \"))\n",
+        "c = int(input(\"Enter the value for c \"))\n",
+        "\n",
+        "if(a>b and a>c):\n",
+        "  if(a%2==0):\n",
+        "   print(\"a is even\")\n",
+        "  else:\n",
+        "   print(\"a is odd\")\n",
+        "else :\n",
+        "  if(b>c):\n",
+        "    if(b>0):\n",
+        "      print(\"positive\")\n",
+        "    else:\n",
+        "     print(\"Negative\")\n",
+        "  else :\n",
+        "    print(\" Third is greater\")\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "81iooFuy_DrP",
+        "outputId": "252bd874-e03c-46b4-e09f-38f66be9d3e6"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the value for a 3\n",
+            "Enter the value for b 2\n",
+            "Enter the value for c 1\n",
+            "a is odd\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Take time (24-hour format)\n",
+        "\n",
+        "If hour < 12 → Morning\n",
+        "\n",
+        "Else\n",
+        "\n",
+        "If hour < 17 → Afternoon\n",
+        "\n",
+        "Else → Evening"
+      ],
+      "metadata": {
+        "id": "9fbM4IFRFfIA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "hour = int(input(\"Enter time from 0 - 24\"))\n",
+        "if(hour<12):\n",
+        "  print(\"Morning\")\n",
+        "else :\n",
+        "  if (hour<17):\n",
+        "    print(\"afternoon\")\n",
+        "  else:\n",
+        "    print(\"Evening\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0r_6x2uRFfux",
+        "outputId": "d3fe29ad-6ff2-41fc-b848-1d05e95400e7"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter time from 0 - 2417\n",
+            "Evening\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Take a number\n",
+        "\n",
+        "If number is positive\n",
+        "\n",
+        "If number is divisible by 3\n",
+        "\n",
+        "If divisible by 5 → “Divisible by 3 and 5”\n",
+        "\n",
+        "Else → “Only divisible by 3”\n",
+        "\n",
+        "Else → “Not divisible by 3”\n",
+        "\n",
+        "Else → “Negative number”"
+      ],
+      "metadata": {
+        "id": "UwshlATrGmCe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter the value for a \"))\n",
+        "\n",
+        "if(a>0):\n",
+        "  if(a%3==0):\n",
+        "    if(a%5==0):\n",
+        "      print(\"Divisible by 3 and 5\")\n",
+        "    else:\n",
+        "      print(\"Divisible by only 3\")\n",
+        "  else:\n",
+        "    print(\"Not divisible by 3\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"Negative Number\")\n",
+        ""
+      ],
+      "metadata": {
+        "id": "cxr2_aP5Gmyc",
+        "outputId": "235508c9-02b6-4c34-eb08-b381f073f39d",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the value for a 15\n",
+            "Divisible by 3 and 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Take a number\n",
+        "\n",
+        "If number is positive\n",
+        "\n",
+        "If number is divisible by 3\n",
+        "\n",
+        "If divisible by 5 → “Divisible by 3 and 5”\n",
+        "\n",
+        "Else → “Only divisible by 3”\n",
+        "\n",
+        "Else → “Not divisible by 3”\n",
+        "\n",
+        "Else → “Negative number”"
+      ],
+      "metadata": {
+        "id": "iPrIJ3j3WYJJ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input(\"Enter the value for a \"))\n",
+        "\n",
+        "if (a>0 and a%3==0 and a%5==0):\n",
+        " print(\"The given number is divisible by both 3 and 5\")\n",
+        "elif (a>0 and a%3!=0):\n",
+        "  print(\"The given number is not divisible by 3\")\n",
+        "elif(a>0 and a%3==0 and a%5!=0):\n",
+        "  print(\"the given number is only didvisible by 3\")\n",
+        "else :\n",
+        "  print(\"the number is negative number \")\n"
+      ],
+      "metadata": {
+        "id": "tXwk8ZZFWcns",
+        "outputId": "01221951-bcc0-4e24-c4f6-ae8a9b2f9871",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the value for a 25\n",
+            "The given number is not divisible by 3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "QJgMkvbYXP75"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
